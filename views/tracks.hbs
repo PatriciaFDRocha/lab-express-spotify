@@ -1,0 +1,11 @@
+
+<div class="tracks-page">
+    {{#each tracks}}
+        {{#if preview_url}}
+            <p>{{name}}<audio controls src={{preview_url}}></audio></p>
+            {{else}}
+                {{name}}
+                <p> There's no preview for this track</p>
+        {{/if}}
+    {{/each}}
+</div>
